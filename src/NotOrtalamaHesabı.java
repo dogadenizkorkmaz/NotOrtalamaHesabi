@@ -26,7 +26,7 @@ public class NotOrtalamaHesabı {
         muzik= inp.nextInt();
 
         int  toplam=(mat+fizik+kimya+turkce+tarih+muzik);
-        double sonuc=toplam/6;
+        double sonuc=toplam/6.0;
         System.out.println("Ortalamanız : "   + sonuc);
 
         double a=sonuc, b=60;
