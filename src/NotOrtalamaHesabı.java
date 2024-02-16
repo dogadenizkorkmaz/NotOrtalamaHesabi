@@ -1,42 +1,39 @@
 import java.util.Scanner;
+
 public class NotOrtalamaHesabı {
     public static void main(String[] args) {
         //ders isimleri tanımla
-        int mat,fizik, kimya, turkce, tarih, muzik;
+        int mat, fizik, kimya, turkce, tarih, muzik;
         //Scanner sınıfı tanımla
         Scanner inp = new Scanner(System.in);
         //kullanıcıdan değerleri al
         System.out.println("Matematik Notunuz : ");
-        mat= inp.nextInt();
+        mat = inp.nextInt();
 
         System.out.println("Fizik Notunuz : ");
-        fizik= inp.nextInt();
+        fizik = inp.nextInt();
 
         System.out.println("Kimya Notunuz : ");
-        kimya= inp.nextInt();
+        kimya = inp.nextInt();
 
         System.out.println("Türkçe Notunuz : ");
-        turkce= inp.nextInt();
+        turkce = inp.nextInt();
 
         System.out.println("Tarih Notunuz : ");
-        tarih= inp.nextInt();
+        tarih = inp.nextInt();
 
         System.out.println("Müzik Notunuz : ");
-        muzik= inp.nextInt();
+        muzik = inp.nextInt();
 
-        int  toplam=(mat+fizik+kimya+turkce+tarih+muzik);
-        double sonuc=toplam/6.0;
-        System.out.println("Ortalamanız : "   + sonuc);
+        int toplam = (mat + fizik + kimya + turkce + tarih + muzik);
+        double sonuc = toplam / 6.0;
+        System.out.println("Ortalamanız : " + sonuc);
 
-        double a=sonuc, b=60;
-        boolean x = a>b;
-        boolean y = a<b;
+        double a = sonuc, b = 60;
+        boolean x = a > b;
+        boolean y = a < b;
         boolean kaldi = !x && y;
-        boolean gecti = x && !y;
-        String kalanortalama=kaldi?"Sınıfta Kaldı":"Sınıfı Geçti";
+        String kalanortalama = kaldi ? "Sınıfta Kaldı" : "Sınıfı Geçti";
         System.out.println(kalanortalama);
-
-
-
     }
 }
