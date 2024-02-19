@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NotOrtalamaHesabı {
+public class NotOrtalamaHesabi {
     public static void main(String[] args) {
         //ders isimleri tanımla
         int mat, fizik, kimya, turkce, tarih, muzik;
